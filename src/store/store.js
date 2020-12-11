@@ -6,6 +6,12 @@ const store = createStore({
     loginAs: action((state, payload) =>{
       state.username = payload
     })
+  },
+  userlist: {
+    userlist: [],
+    loadUserlist: action((state, payload) => {
+      state.userlist = payload
+    })
   }
 });
 
